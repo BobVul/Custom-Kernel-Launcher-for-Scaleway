@@ -1,6 +1,12 @@
 # Custom Kernel Launcher for Scaleway
 A collection of scripts to load a custom kernel on Scaleway servers
 
+# Disclaimer
+
+This project is not affiliated with nor endorsed by Scaleway or Online SAS in any way.
+
+Scaleway is a trademark of Online SAS.
+
 # Introduction
 
 The virtual (i.e. not-baremetal) servers available on Scaleway are run [within KVM](https://www.scaleway.com/faq/server/#-Which-hypervisor-do-you-use). In theory, this gives you a proper virtual machine that you can do whatever you wish within.
@@ -50,11 +56,5 @@ This is mostly based off the simple `kexec` commands described on the [Archlinus
 I expect this to work on all the VPSes. If you're using it on the baremetal servers, you might need to configure the root device in `/etc/fstab`, since it's probaby not `/dev/vda`... The network interface in the udev rule also needs to be updated, since it's currently pinned to the KVM `virtio` name.
 
 For other distros, you might need to customise the systemd scripts appropriately. The network interface rules might also need to be updated.
-
-# Disclaimer
-
-This project is not affiliated with nor endorsed by Scaleway or Online SAS in any way.
-
-Scaleway is a trademark of Online SAS.
 
 
