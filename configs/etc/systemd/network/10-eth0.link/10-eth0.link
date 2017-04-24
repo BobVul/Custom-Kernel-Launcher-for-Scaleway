@@ -1,0 +1,6 @@
+[Match]
+OriginalName=virtio-pci-0000:00:02.0
+KernelCommandLine=scalewaycustomkernel
+
+[Link]
+Name=eth0
