@@ -1,7 +1,7 @@
 [Unit]
 Description=Load /vmlinuz kernel on boot
 Documentation=https://github.com/BobVul/Scaleway-Custom-Kernel-Launcher
-ConditionKernelCommandLine=!scalewaycustomkernel
+ConditionKernelCommandLine=!sckl-kernel-loaded
 
 [Service]
 Type=oneshot

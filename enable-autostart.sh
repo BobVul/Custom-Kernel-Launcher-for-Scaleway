@@ -1,3 +1,3 @@
 #!/bin/sh
 
-systemctl enable scaleway-customkernel-kexec.service
+systemctl enable sckl-kexec.trigger.service
