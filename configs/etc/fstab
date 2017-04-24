@@ -1,0 +1,2 @@
+# UNCONFIGURED FSTAB FOR BASE SYSTEM
+/dev/vda / ext4 rw,relatime,data=ordered 0 0
