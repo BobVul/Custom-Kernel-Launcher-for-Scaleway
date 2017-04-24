@@ -17,7 +17,9 @@ Luckily, Scaleway has kindly enabled [`kexec`](https://wiki.archlinux.org/index.
 
 With a couple of scripts, we can get this to automatically happen on boot, which gives us a pretty seamless way to get into a custom kernel.
 
-Currently, this is written for the official Scaleway Ubuntu 16.04 image and tested on a VC1M. In theory, it should work the same on every Scaleway VPS. It might need some tweaking for other distros, or for use on the baremetal servers.
+# Supported platforms
+
+Currently, this is written for the official Scaleway Ubuntu 16.04 image and tested on a VC1S, VC1M and X64-15GB. It might need some tweaking for other distros, or for use on the baremetal servers.
 
 # Instructions
 
