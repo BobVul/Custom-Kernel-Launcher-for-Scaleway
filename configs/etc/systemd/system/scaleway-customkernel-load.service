@@ -1,0 +1,12 @@
+[Unit]
+Description=Load /vmlinuz kernel on boot
+Documentation=https://github.com/BobVul/Scaleway-Custom-Kernel-Launcher
+DefaultDependencies=no
+Before=shutdown.target umount.target final.target
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/kexec -l /vmlinuz --initrd=/initrd.img --reuse-cmdline --append=scalewaycustomkernel
+
+[Install]
+RequiredBy=kexec.target

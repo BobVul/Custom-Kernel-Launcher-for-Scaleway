@@ -1,10 +1,11 @@
 [Unit]
 Description=Load /vmlinuz kernel on boot
 Documentation=https://github.com/BobVul/Scaleway-Custom-Kernel-Launcher
-ConditionKernelCommandLine=scalewaycustomkernel
-Requires=kexec.service
-Before=kexec.service
+ConditionKernelCommandLine=!scalewaycustomkernel
 
 [Service]
 Type=oneshot
-ExecStart=/sbin/kexec -l /vmlinuz --initrd=/initrd.img --reuse-cmdline --append=scalewaycustomkernel
+ExecStart=/bin/systemctl kexec
+
+[Install]
+WantedBy=default.target
