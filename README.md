@@ -19,9 +19,9 @@ You are expected to be running as root. The install scripts are written for a cl
 
 1. Clone this repository somewhere.
 
-2. Install a custom or distro-official kernel. In Ubuntu, this can be accomplished with `apt install linux-generic`. You are expected to end up with a `/vmlinuz` and `/initrd.img` file in the root.
+2. Install a custom or distro-official kernel. In Ubuntu, this can be accomplished with `apt install linux-generic`. You are expected to end up with a `/vmlinuz` and `/initrd.img` file in the root. If it prompts you, do **not** install grub on any devices - leave them all unticked and press enter, then yes continue without installing grub.
 
-3. Install `kexec`. In Ubuntu, `apt install kexec-tools`.
+3. Install `kexec`. In Ubuntu, `apt install kexec-tools`. If it prompts you, you do **not** want it to handle reboots.
 
 4. Run `install.sh`. This will copy some configs necessary to get prevent errors during the boot.
 
