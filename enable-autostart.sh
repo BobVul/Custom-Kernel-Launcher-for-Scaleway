@@ -1,3 +1,3 @@
 #!/bin/sh
 
-systemctl enable sckl-kexec.trigger.service
+systemctl enable sckl-kexec-trigger.service
