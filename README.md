@@ -43,7 +43,7 @@ You are expected to be running as root. The install scripts are written for a cl
 
 # Details
 
-This is mostly based off the simple `kexec` commands described on the [Archlinus wiki](https://wiki.archlinux.org/index.php/kexec). There are some adjustments:
+This is mostly based off the simple `kexec` commands described on the [Archlinux wiki](https://wiki.archlinux.org/index.php/kexec). There are some adjustments:
 
 * `/etc/fstab` needs an entry added to set the root filesystem to `rw`, otherwise it's in readonly.
 
