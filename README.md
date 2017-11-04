@@ -1,3 +1,7 @@
+It's probably better to use the [server tags](https://github.com/scaleway/initrd/tree/master/Linux#boot-options) that Scaleway provides to specify your `KEXEC_KERNEL` and `KEXEC_INITRD`, rather than the scripts provided here. However, the fstab and udev rules in this repository might still be useful in getting a working system running.
+
+---
+
 # Custom Kernel Launcher for Scaleway
 A collection of scripts to load a custom kernel on Scaleway servers
 
